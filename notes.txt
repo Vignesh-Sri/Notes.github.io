@@ -1,0 +1,180 @@
+Microsoft Windows [Version 10.0.18363.657]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Hp>git --version
+git version 2.26.1.windows.1
+
+C:\Users\Hp>git config --global user.name "Vignesh_Sri"
+
+C:\Users\Hp>git config --global user.email "vigneshsrinivasan23@gmail.com"
+
+C:\Users\Hp>git config user.name
+Vignesh_Sri
+
+C:\Users\Hp>git config user.email
+vigneshsrinivasan23@gmail.com
+
+C:\Users\Hp>cd desktop
+
+C:\Users\Hp\Desktop>mkdir today
+
+C:\Users\Hp\Desktop>cd today
+
+C:\Users\Hp\Desktop\today>cd..
+
+C:\Users\Hp\Desktop>cd today
+
+C:\Users\Hp\Desktop\today>notepad python.py
+
+C:\Users\Hp\Desktop\today>notepad myfile.py
+
+C:\Users\Hp\Desktop\today>git init
+Initialized empty Git repository in C:/Users/Hp/Desktop/today/.git/
+
+C:\Users\Hp\Desktop\today>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myfile.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Hp\Desktop\today>git add .
+
+C:\Users\Hp\Desktop\today>git commit -m "commit one"
+[master (root-commit) bd83c29] commit one
+ 1 file changed, 1 insertion(+)
+ create mode 100644 myfile.py
+
+C:\Users\Hp\Desktop\today>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Hp\Desktop\today>git log
+commit bd83c297752a3f533bb23d75fb7ca49c6d6a1ae4 (HEAD -> master)
+Author: Vignesh_Sri <vigneshsrinivasan23@gmail.com>
+Date:   Wed Apr 15 19:47:39 2020 +0530
+
+    commit one
+
+C:\Users\Hp\Desktop\today>notepad index.txt
+
+C:\Users\Hp\Desktop\today>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Hp\Desktop\today>git add .
+
+C:\Users\Hp\Desktop\today>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.txt
+
+
+C:\Users\Hp\Desktop\today>git commit -m "commit two"
+[master 225677a] commit two
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.txt
+
+C:\Users\Hp\Desktop\today>git log
+commit 225677a6cb92f988bf169b74e1c1c59d527c19bb (HEAD -> master)
+Author: Vignesh_Sri <vigneshsrinivasan23@gmail.com>
+Date:   Wed Apr 15 19:52:46 2020 +0530
+
+    commit two
+
+commit bd83c297752a3f533bb23d75fb7ca49c6d6a1ae4
+Author: Vignesh_Sri <vigneshsrinivasan23@gmail.com>
+Date:   Wed Apr 15 19:47:39 2020 +0530
+
+    commit one
+
+C:\Users\Hp\Desktop\today>cd ..
+
+C:\Users\Hp\Desktop>mkdir myresume
+
+C:\Users\Hp\Desktop>cd myresume
+
+C:\Users\Hp\Desktop\myresume>notepad index.html
+
+C:\Users\Hp\Desktop\myresume>git init
+Initialized empty Git repository in C:/Users/Hp/Desktop/myresume/.git/
+
+C:\Users\Hp\Desktop\myresume>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        serpan.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Hp\Desktop\myresume>git add .
+
+C:\Users\Hp\Desktop\myresume>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   serpan.jpg
+
+
+C:\Users\Hp\Desktop\myresume>git commit -m "commit one"
+[master (root-commit) f6f3b27] commit one
+ 2 files changed, 47 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 serpan.jpg
+
+C:\Users\Hp\Desktop\myresume>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Hp\Desktop\myresume>git remote add origin https://github.com/Vignesh-Sri/Vignesh_Sri.github.io.git
+
+C:\Users\Hp\Desktop\myresume>git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 147.26 KiB | 3.68 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Vignesh-Sri/Vignesh_Sri.github.io.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\Hp\Desktop\myresume>
+C:\Users\Hp\Desktop\myresume>
+C:\Users\Hp\Desktop\myresume>
+C:\Users\Hp\Desktop\myresume>
+C:\Users\Hp\Desktop\myresume>git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\Hp\Desktop\myresume>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\Hp\Desktop\myresume>git remote add origin https://github.com/Vignesh-Sri/Vignesh_Sri.github.io.git
+fatal: remote origin already exists.
+
+C:\Users\Hp\Desktop\myresume>git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\Hp\Desktop\myresume>
